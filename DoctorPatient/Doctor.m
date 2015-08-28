@@ -39,10 +39,11 @@
         if (patient.symptoms.length > 1) {
             
             Prescription* presciptionGiven = [[Prescription alloc] init];
+            ([self.patientInformation addObject:presciptionGiven]);
             return presciptionGiven;
         }
         
-         ([self.patientInformation addObject:]);
+    
     }
     return nil;
 }
